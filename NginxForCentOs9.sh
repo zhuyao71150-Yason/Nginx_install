@@ -84,11 +84,8 @@ build_libmaxminddb() {
 
 prepare_geoip2_module() {
   log "準備 ngx_http_geoip2_module..."
-  cd /usr/local/src
-  rm -rf ngx_http_geoip2_module
-  git clone --depth=1 https://github.com/leev/ngx_http_geoip2_module.git
   rm -rf "${MODULE_SRC_DIR}"
-  mv ngx_http_geoip2_module "${MODULE_SRC_DIR}"
+  git clone --depth=1 https://github.com/leev/ngx_http_geoip2_module.git "${MODULE_SRC_DIR}"
 }
 
 build_nginx() {
