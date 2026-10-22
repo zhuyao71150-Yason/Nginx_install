@@ -51,12 +51,11 @@ install_build_deps() {
   dnf -y install \
     gcc gcc-c++ make libtool autoconf automake \
     zlib zlib-devel \
-    pcre pcre-devel pcre2 pcre2-devel \
+    pcre2 pcre2-devel \
     openssl openssl-devel \
     wget curl tar xz unzip git \
     vim lrzsz \
     perl perl-devel perl-ExtUtils-Embed \
-    libxml2-devel libxslt-devel gd-devel GeoIP-devel \
     ca-certificates firewalld
 }
 
